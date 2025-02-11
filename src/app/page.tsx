@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-6 sm:gap-8 row-start-2 items-center sm:items-start px-4">
         <Image
           // className="dark:invert"
           src="/logo.png"
@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="font-[family-name:var(--font-geist-mono)] font-semibold text-center sm:text-left">
             What We Offer:
           </h1>
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2 mt-4">
+          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2 mt-1">
             <li>
               Web Development{" "}
               <code className="bg-black/[.05] dark:bg-white/[.1] px-2 py-0.5 rounded font-semibold">
@@ -48,7 +48,7 @@ export default function Home() {
           </ol>
         </div>
 
-        <div className="px-4 text-center sm:text-left">
+        <div className="text-center sm:text-left">
           <h2 className="font-[family-name:var(--font-geist-mono)] font-semibold">
             We’re Hiring! 🚀
           </h2>
