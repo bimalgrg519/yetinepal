@@ -48,6 +48,24 @@ export default function Home() {
           </ol>
         </div>
 
+        <div className="px-4 text-center sm:text-left">
+          <h2 className="font-[family-name:var(--font-geist-mono)] font-semibold">
+            We’re Hiring! 🚀
+          </h2>
+          <p className="font-[family-name:var(--font-geist-mono)] text-sm mt-1">
+            We are looking for{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.1] px-2 py-0.5 rounded font-semibold text-[#d2691e]">
+              React, Node.js and React Native
+            </code>{" "}
+            developers to join our team!
+          </p>
+          <p className="font-[family-name:var(--font-geist-mono)] text-sm mt-2">
+            Whether you’re experienced or just starting out, if you love
+            building websites, apps, or backends, we’d love to have you on our
+            team.
+          </p>
+        </div>
+
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
