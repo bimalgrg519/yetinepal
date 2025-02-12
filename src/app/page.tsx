@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen px-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] p-2 sm:p-20 font-[family-name:var(--font-geist-sans)] items-start sm:items-center">
       <main className="flex flex-col gap-6 sm:gap-8 row-start-2 items-center sm:items-start px-4">
         <Image
           // className="dark:invert"
@@ -69,21 +69,6 @@ export default function Home() {
         <div className="flex space-x-2 sm:space-x-4 items-center flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://www.youtube.com/@theyetinepal"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              // className="dark:invert"
-              src="/youtube.svg"
-              alt="youtube logomark"
-              width={24}
-              height={24}
-            />
-            Watch Now
-          </a>
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://www.instagram.com/yetinepal_?igsh=MW9uMzAwOGg1Z3VubA%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
@@ -96,6 +81,21 @@ export default function Home() {
               height={24}
             />
             Send a Message
+          </a>
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="https://www.youtube.com/@theyetinepal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              // className="dark:invert"
+              src="/youtube.svg"
+              alt="youtube logomark"
+              width={24}
+              height={24}
+            />
+            Watch Now
           </a>
         </div>
       </main>
