@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen px-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-6 sm:gap-8 row-start-2 items-center sm:items-start px-4">
         <Image
           // className="dark:invert"
@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="font-[family-name:var(--font-geist-mono)] font-semibold text-center sm:text-left">
             What We Offer:
           </h1>
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2 mt-1">
+          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-1 sm:space-y-2 mt-1">
             <li>
               Web Development{" "}
               <code className="bg-black/[.05] dark:bg-white/[.1] px-2 py-0.5 rounded font-semibold">
@@ -66,7 +66,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex space-x-2 sm:space-x-4 items-center flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://www.youtube.com/@theyetinepal"
