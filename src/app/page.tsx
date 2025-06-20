@@ -4,11 +4,11 @@ import CoursesSection from "@/components/CoursesSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#1b1b1f] text-white">
+    <div className="min-h-screen bg-[#1b1b1f] text-white px-4">
       <Navigation />
-      <main>
+      <main className="max-w-5xl mx-auto">
         <HeroSection />
-        {/* <CoursesSection /> */}
+        <CoursesSection />
       </main>
     </div>
   );
