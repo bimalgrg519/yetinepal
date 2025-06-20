@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 const CoursesSection = () => {
   const courses = [
@@ -10,6 +11,7 @@ const CoursesSection = () => {
         "Start your coding journey with the fundamentals of web development. Build responsive websites and learn how the web works from scratch.",
       imgPath: "/course1.png",
       duration: 1.5,
+      link: "/courses/web-development-basics",
     },
     {
       id: 2,
@@ -17,6 +19,7 @@ const CoursesSection = () => {
       description: "Build complete web applications",
       imgPath: "/course2.png",
       duration: 3,
+      link: "/courses/web-development-basics",
     },
     {
       id: 3,
@@ -24,6 +27,7 @@ const CoursesSection = () => {
       description: "Create mobile apps with React Native",
       duration: 1.5,
       imgPath: "/react-native.png",
+      link: "/courses/web-development-basics",
     },
   ];
 
@@ -36,29 +40,33 @@ const CoursesSection = () => {
             key={course.id}
             className="overflow-hidden border-gray-800 hover:bg-gray-650 cursor-pointer hover:scale-[102%] transition-all hover:shadow-glow-cyan"
           >
-            <CardContent className="p-0">
-              <div className="relative h-48 rounded-t-lg">
-                <Image
-                  src={course.imgPath}
-                  fill
-                  alt=""
-                  className="object-contain grayscale-[50%]"
-                />
-              </div>
+            <Link href={course.link}>
+              <CardContent className="p-0">
+                <div className="relative h-48 rounded-t-lg">
+                  <Image
+                    src={course.imgPath}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    alt=""
+                    className="object-cover grayscale-[50%] w-auto h-auto"
+                  />
+                </div>
 
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {course.title}
-                </h3>
-                <a href="" className="underline mb-2 block font-extralight">
-                  Read More
-                </a>
-                <p className="font-extralight">
-                  Duration: {course.duration} months
-                </p>
-              </div>
-              {/* <p className="text-gray-300 text-sm">{course.description}</p> */}
-            </CardContent>
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {course.title}
+                  </h3>
+                  <p className="underline mb-2 block font-extralight">
+                    Read More
+                  </p>
+                  {/* <Link href="">Read More</Link> */}
+                  <p className="font-extralight">
+                    Duration: {course.duration} months
+                  </p>
+                </div>
+                {/* <p className="text-gray-300 text-sm">{course.description}</p> */}
+              </CardContent>
+            </Link>
           </Card>
         ))}
       </div>

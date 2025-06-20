@@ -16,7 +16,8 @@ const HeroSection = () => {
           alt="Profile Pic"
           width={240}
           height={240}
-          className="rounded-md shadow-2xl"
+          className="rounded-md shadow-2xl h-auto w-auto"
+          priority={true}
         />
 
         <div className="">

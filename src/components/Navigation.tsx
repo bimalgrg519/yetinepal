@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navigation = () => {
   return (
     <nav className="bg-[#161618] border-b border-gray-800 px-6 py-4">
       <div className="max-w-5xl mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4">
+        <Link href="/" className="flex items-center space-x-4">
           <Image src="/logo.png" alt="Logo" width={50} height={50} />
-        </div>
-
+        </Link>
         <div className="hidden md:flex items-center space-x-8">
           <a
             href="#"
