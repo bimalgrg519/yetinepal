@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 const mentorshipDescription = `This 1-on-1 mentorship program is designed for individuals who want personalized guidance to fast-track their learning and career growth in web or app development. Whether you're a complete beginner or looking to sharpen specific skills, you’ll receive tailored support based on your goals, pace, and learning style.`;
 
@@ -40,20 +41,32 @@ const mentorshipPrograms = [
 
 export default function Mentorship() {
   return (
-    <div className="pt-12 px-6">
-      <h2 className="text-5xl font-semibold mb-3 border-b border-gray-600 pb-1">
-        1-on-1 Mentorship Program
-      </h2>
-      <p className="text-gray-300 mb-4">{mentorshipDescription}</p>
-
-      <ul className="list-none pl-0 space-y-2 text-gray-300">
-        {mentorshipBenefits.map((benefit, i) => (
-          <li key={i} className="flex items-start gap-2">
-            <span className="text-green-500 mt-1">✔</span>
-            <span>{benefit}</span>
-          </li>
-        ))}
-      </ul>
+    <div className="pt-8 md:pt-12 px-6">
+      {/* <div className="absolute inset-0 bg-[url('/1-on-1-mentorship.JPG')] bg-cover bg-no-repeat opacity-30" /> */}
+      <section className="flex md:space-x-4 flex-col-reverse md:flex-row">
+        <div className="md:w-2/3">
+          <h2 className="text-4xl font-semibold mb-3 border-b border-gray-600 pb-1">
+            1-on-1 Mentorship Program
+          </h2>
+          <p className="text-gray-300 mb-4">{mentorshipDescription}</p>
+          <ul className="list-none pl-0 space-y-2 text-gray-300">
+            {mentorshipBenefits.map((benefit, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="text-green-500 mt-1">✔</span>
+                <span>{benefit}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="md:w-1/3 relative w-full h-60 md:h-auto md:mb-0 mb-6">
+          <Image
+            src="/1-on-1-mentorship.JPG"
+            className="h-auto w-auto object-contain brightness-[110%]"
+            fill
+            alt="1-on-1 mentorship"
+          />
+        </div>
+      </section>
       <section>
         <h2 className="text-2xl mt-8 font-semibold mb-4 border-b border-gray-600 pb-1">
           Mentorship Programs You Can Join Today

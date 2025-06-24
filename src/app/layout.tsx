@@ -34,7 +34,9 @@ export default function RootLayout({
       "
       >
         <Navigation />
-        <main className="max-w-5xl mx-auto px-4 pb-14">{children}</main>
+        <div className="relative">
+          <main className="max-w-5xl mx-auto px-4 pb-14">{children}</main>
+        </div>
       </body>
     </html>
   );
