@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import NProgressProvider from "./nprogress-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         text-white
       "
       >
+        <NProgressProvider />
         <Navigation />
         <div className="relative">
           <main className="max-w-5xl mx-auto px-4 pb-14">{children}</main>
