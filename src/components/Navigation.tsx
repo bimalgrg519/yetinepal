@@ -25,6 +25,10 @@ const menus = [
     href: "/hiring",
   },
   {
+    title: "Internships",
+    href: "/internships",
+  },
+  {
     title: "Contact",
     href: "/contact",
   },
