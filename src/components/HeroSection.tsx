@@ -1,48 +1,34 @@
-import Image from "next/image";
-import { WatchTutorialButton } from "./WatchTutorialButton";
+import LetsTalkButton from "./LetsTalkButton";
 
 const HeroSection = () => {
   return (
-    <section className="py-8">
-      <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-12">
-        {/* <img
-                src="/lovable-uploads/022d8c0e-c6f3-455b-aff2-41442512a71f.png"
-                alt="Bimal Gurung - Full-stack Developer"
-                className="w-80 h-80 object-cover rounded-lg shadow-2xl"
-              /> */}
-        <div className="relative h-48 w-48 sm:h-56 sm:w-56">
-          <Image
-            src="/profile-pic.jpg"
-            alt="Profile Pic"
-            fill
-            className="rounded-md shadow-2xl h-auto w-auto object-cover"
-            sizes="(max-width: 768px) 100vw, 33vw"
-            priority={true}
-          />
-        </div>
+    <section className="relative py-16 flex flex-col items-center overflow-hidden">
+      {/* Content container */}
+      <div className="space-y-6 sm:space-y-8 text-center">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80 shadow-sm backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          Based in Nepal • Remote-friendly
+        </span>
 
-        <div className="flex-1">
-          <div className="space-y-4">
-            <p className="text-base text-gray-300 leading-relaxed font-[var(--font-geist-mono)]">
-              Hi, I&apos;m <span className="font-semibold">Bimal Gurung</span> -
-              a full-stack developer and tech educator with{" "}
-              <span className="text-[#d2691e] font-semibold">
-                10+ years of experience
-              </span>{" "}
-              in web and mobile app development. Over the past decade, I&apos;ve
-              built high-quality applications for clients and startups using{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.1] px-2 py-0.5 rounded font-semibold">
-                React, Next.js, Node.js, and React Native.
-              </code>
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              {`I enjoy teaching what I've learned and am passionate about
-                helping new developers kickstart their careers in tech.`}
-            </p>
-          </div>
-          <div className="pt-4">
-            <WatchTutorialButton />
-          </div>
+        <h1 className="font-black tracking-tight text-5xl sm:text-6xl md:text-8xl">
+          <span className="block bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase">
+            Your Idea,
+          </span>
+          <span className="block">
+            <span className="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase">
+              Our Expertise
+            </span>
+            <span className="ml-4">🚀</span>
+          </span>
+        </h1>
+
+        <p className="mx-auto max-w-2xl text-lg sm:text-xl text-white/80">
+          We’re the tech team behind your next big idea — crafting smart,
+          scalable solutions.
+        </p>
+
+        <div className="pt-2 flex justify-center">
+          <LetsTalkButton />
         </div>
       </div>
     </section>

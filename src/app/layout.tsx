@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import NProgressProvider from "./nprogress-provider";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const pacifico = Pacifico({
+  variable: "--font-pacifico",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased dark scroll-smooth`}
     >
       <body
         className="font-[family-name:var(--font-geist-mono)]
@@ -37,8 +44,9 @@ export default function RootLayout({
         <NProgressProvider />
         <Navigation />
         <div className="relative">
-          <main className="max-w-5xl mx-auto px-4 pb-14">{children}</main>
+          <main className="px-6 pb-8">{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );
