@@ -140,8 +140,7 @@ const CoursesSection = () => {
         {courses.map((course) => (
           <Card
             key={course.id}
-            className="overflow-hidden border-gray-700/60 hover:border-gray-600 cursor-pointer transition-all duration-500 w-full"
-            // className="overflow-hidden border-gray-800 hover:bg-gray-650 cursor-pointer hover:scale-[102%] transition-all hover:shadow-glow-cyan"
+            className="hover:border-gray-700 transition-all"
           >
             <Link href={`courses/${course.id}`}>
               <CardContent className="p-0">

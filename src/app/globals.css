@@ -65,12 +65,12 @@
   }
   .dark {
     /* Apple-like dark background: #1b1b1f => hsl(240 7% 12%) */
-    --background: 240 7% 12%;
+    --background: 240 0% 12%;
 
     --foreground: 0 0% 98%;
 
     /* Keep surfaces consistent with background */
-    --card: 240 7% 12%;
+    --card: 240 0% 12%;
 
     --card-foreground: 0 0% 98%;
 

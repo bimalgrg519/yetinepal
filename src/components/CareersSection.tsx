@@ -114,10 +114,7 @@ export default function CareersSection() {
           {roles.map((role) => {
             const a = accentMap[role.accent];
             return (
-              <Card
-                key={role.title}
-                className={`border-gray-700 transition transform hover:-translate-y-0.5 hover:shadow-lg ${a.ring}`}
-              >
+              <Card key={role.title}>
                 <CardHeader>
                   {/* accent pill */}
                   <div
