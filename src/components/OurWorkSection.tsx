@@ -144,7 +144,7 @@ const OurWorkSection = () => {
         ))}
       </div>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {filtered.map((item) => (
           <Card key={item.id}>
             <CardContent className="p-0">
@@ -208,7 +208,7 @@ const OurWorkSection = () => {
 
       <div className="mt-8 text-center">
         <Link
-          href="/contact"
+          href="/#navigation"
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/90 hover:bg-white/[0.1] transition-colors"
         >
           Let’s build yours

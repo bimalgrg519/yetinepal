@@ -136,7 +136,7 @@ const CoursesSection = () => {
   return (
     <section id="courses" className="py-12">
       <h2 className="text-4xl font-bold mb-6 text-center">Courses</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {courses.map((course) => (
           <Card
             key={course.id}

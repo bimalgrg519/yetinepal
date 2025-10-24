@@ -62,7 +62,7 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="px-6">
+    <nav className="px-6" id="navigation">
       <div className="grid h-32 items-center grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_auto_1fr]">
         <div className="hidden md:flex flex-col md:col-start-1 md:justify-self-start">
           <MenuItem />
