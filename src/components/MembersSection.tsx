@@ -9,19 +9,17 @@ type Member = {
 };
 
 const members: Member[] = [
-  { name: "John Doe", role: "Software Engineer", src: "/students/1.JPG" },
-  { name: "John Doe", role: "Software Engineer", src: "/students/2.jpg" },
-  { name: "John Doe", role: "Software Engineer", src: "/students/3.jpg" },
-  { name: "John Doe", role: "Software Engineer", src: "/students/4.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/5.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/1.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/2.jpg" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/3.jpg" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/4.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/5.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/3.jpg" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/4.JPG" },
-  // { name: "John Doe", role: "Software Engineer", src: "/students/5.JPG" },
+  {
+    name: "Ashim Gautam",
+    role: "Sr. Backend Developer",
+    src: "/team/ashim.png",
+  },
+  { name: "Bimal Gurung", role: "Founder & CEO", src: "/team/bimal.png" },
+  {
+    name: "Nitan Gurung",
+    role: "Sr. Frontend Developer",
+    src: "/team/nitan.JPG",
+  },
 ];
 
 const MembersSection = () => {
