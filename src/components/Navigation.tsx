@@ -12,7 +12,7 @@ const menus = [
     href: "/#courses",
   },
   {
-    title: "Our Work",
+    title: "Our Clients",
     href: "/#work",
   },
   {
