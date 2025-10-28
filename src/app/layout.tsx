@@ -44,7 +44,7 @@ export default function RootLayout({
         <NProgressProvider />
         <Navigation />
         <div className="relative">
-          <main className="px-6 pb-8">{children}</main>
+          <main className="px-2 pb-8">{children}</main>
         </div>
         <Footer />
       </body>
