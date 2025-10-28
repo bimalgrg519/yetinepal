@@ -110,11 +110,11 @@ export default function CareersSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {roles.map((role) => {
             const a = accentMap[role.accent];
             return (
-              <Card key={role.title}>
+              <Card key={role.title} className="w-72 sm:w-80">
                 <CardHeader>
                   {/* accent pill */}
                   <div

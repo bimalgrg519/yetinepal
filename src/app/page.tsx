@@ -13,8 +13,8 @@ const Index = () => {
       <TechStackMarquee />
       <ServicesSection />
       <OurWorkSection />
-      <MembersSection />
       <CoursesSection />
+      <MembersSection />
       <CareersSection />
     </>
   );

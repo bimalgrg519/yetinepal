@@ -134,41 +134,41 @@ export const courses = [
 
 const CoursesSection = () => {
   return (
-    <section id="courses" className="py-12">
-      <h2 className="text-4xl font-bold mb-6 text-center">Courses</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-        {courses.map((course) => (
-          <Card
-            key={course.id}
-            className="hover:border-gray-700 transition-all"
-          >
-            <Link href={`courses/${course.id}`}>
-              <CardContent className="p-0">
-                <div className="relative h-48">
-                  <Image
-                    src={course.imgPath}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    alt=""
-                    className="object-cover w-auto h-auto brightness-[90%] hover:brightness-75 transition-all duration-500 ease-in-out"
-                  />
-                </div>
+    <section id="courses" className="py-12 mt-16">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-6 text-center">Courses</h2>
+        <div className="flex flex-wrap justify-center gap-6">
+          {courses.map((course) => (
+            <Card
+              key={course.id}
+              className="w-72 sm:w-80 hover:border-gray-700 transition-all"
+            >
+              <Link href={`courses/${course.id}`}>
+                <CardContent className="p-0">
+                  <div className="relative h-48">
+                    <Image
+                      src={course.imgPath}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      alt=""
+                      className="object-cover w-auto h-auto grayscale-[20%] brightness-[90%] hover:brightness-75 transition-all duration-500 ease-in-out"
+                    />
+                  </div>
 
-                <div className="p-4 text-center">
-                  <h3 className="text-base mb-2">{course.title}</h3>
-                  <p className="underline text-muted-foreground mb-2 block text-sm hover:text-gray-400 transition-colors">
-                    Read More
-                  </p>
-                  {/* <Link href="">Read More</Link> */}
-                  <p className="text-sm text-muted-foreground">
-                    Duration: {course.duration} months
-                  </p>
-                </div>
-                {/* <p className="text-gray-300 text-sm">{course.description}</p> */}
-              </CardContent>
-            </Link>
-          </Card>
-        ))}
+                  <div className="p-4 text-center">
+                    <h3 className="text-base mb-2">{course.title}</h3>
+                    <p className="underline text-muted-foreground mb-2 block text-sm hover:text-gray-400 transition-colors">
+                      Read More
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Duration: {course.duration} months
+                    </p>
+                  </div>
+                </CardContent>
+              </Link>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

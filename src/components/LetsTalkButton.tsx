@@ -83,11 +83,13 @@ export default function LetsTalkButton({ onClick, className }: Props) {
               <div className="mt-0.5 rounded-md bg-emerald-500/15 p-2 text-emerald-400">
                 <Phone className="h-4 w-4" />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="text-sm text-white/70">WhatsApp</p>
-                <p className="font-medium text-white">{whatsappDisplay}</p>
+                <p className="font-medium text-white break-words">
+                  {whatsappDisplay}
+                </p>
 
-                <div className="mt-3 flex items-center gap-2">
+                <div className="mt-3 flex flex-wrap sm:flex-nowrap items-center gap-2 gap-y-2">
                   <Button asChild size="sm" className="h-8 px-3">
                     <a
                       href={whatsappLink}
@@ -95,7 +97,7 @@ export default function LetsTalkButton({ onClick, className }: Props) {
                       rel="noopener noreferrer"
                       aria-label="Open WhatsApp chat"
                     >
-                      Open WhatsApp
+                      WhatsApp
                       <ExternalLink className="ml-1 h-3.5 w-3.5" />
                     </a>
                   </Button>
@@ -128,11 +130,13 @@ export default function LetsTalkButton({ onClick, className }: Props) {
               <div className="mt-0.5 rounded-md bg-blue-500/15 p-2 text-blue-400">
                 <Mail className="h-4 w-4" />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="text-sm text-white/70">Email</p>
-                <p className="font-medium text-white">{CONTACT.email}</p>
+                <p className="font-medium text-white break-words">
+                  {CONTACT.email}
+                </p>
 
-                <div className="mt-3 flex items-center gap-2">
+                <div className="mt-3 flex flex-wrap sm:flex-nowrap items-center gap-2 gap-y-2">
                   <Button asChild size="sm" className="h-8 px-3">
                     <a href={emailLink} aria-label="Send email">
                       Send Email
