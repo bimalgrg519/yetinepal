@@ -18,7 +18,7 @@ const HeroSection = () => {
             <span className="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase">
               Our Expertise
             </span>
-            <span className="ml-4">🚀</span>
+            <span className="ml-4">🌻</span>
           </span>
         </h1>
 
