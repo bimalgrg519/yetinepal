@@ -57,14 +57,14 @@ const OurWorkSection = () => {
                 aria-label={item.title}
                 className="block"
               >
-                <div className="relative h-24 sm:h-28 md:h-32 w-40 sm:w-48 md:w-56 flex items-center justify-center overflow-hidden">
+                <div className="relative w-36 h-24 sm:h-28 sm:w-40 flex items-center justify-center overflow-hidden">
                   {item.img && (
                     <Image
                       src={item.img}
                       alt={`${item.title} logo`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 15vw"
-                      className="object-contain grayscale-[60%] transition-all duration-200 group-hover:grayscale-0"
+                      className="object-contain"
                       priority={false}
                     />
                   )}
