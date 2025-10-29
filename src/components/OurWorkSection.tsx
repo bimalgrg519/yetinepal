@@ -64,7 +64,7 @@ const OurWorkSection = () => {
                       alt={`${item.title} logo`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 15vw"
-                      className="object-contain grayscale transition-all duration-200 group-hover:grayscale-0"
+                      className="object-contain grayscale-[60%] transition-all duration-200 group-hover:grayscale-0"
                       priority={false}
                     />
                   )}

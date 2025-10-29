@@ -11,14 +11,20 @@ type Member = {
 const members: Member[] = [
   {
     name: "Ashim Gautam",
-    role: "Sr. Backend Developer",
+    role: "Full Stack Developer",
     src: "/team/ashim.png",
   },
   { name: "Bimal Gurung", role: "Founder & CEO", src: "/team/bimal.png" },
   {
     name: "Nitan Gurung",
-    role: "Sr. Frontend Developer",
+    role: "Associate Frontend Developer",
     src: "/team/nitan.JPG",
+  },
+  { name: "Sawan Gurung", role: "DevOps Engineer", src: "/team/sawan.JPG" },
+  {
+    name: "Utsab Gharti",
+    role: "Associate Frontend Developer",
+    src: "/team/utsab.JPG",
   },
 ];
 
