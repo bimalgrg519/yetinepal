@@ -21,6 +21,7 @@ const members: Member[] = [
   },
   { name: "Sawan Gurung", role: "DevOps Engineer", src: "/team/sawan.JPG" },
   { name: "Akriti Gurung", role: "Intern", src: "/team/akriti.jpg" },
+  { name: "Saloni Pradhan", role: "Intern", src: "" },
   { name: "Manika Gurung", role: "UI/UX Designer", src: "/team/manika.jpg" },
   {
     name: "Sandesh Chhetri",
