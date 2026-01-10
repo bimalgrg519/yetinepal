@@ -44,6 +44,11 @@ const members: Member[] = [
     role: "Associate Frontend Developer",
     src: "/team/utsab.JPG",
   },
+  {
+    name: "Simran Tamang",
+    role: "Trainee",
+    src: "/team/simran.JPG",
+  },
 ];
 
 const MembersSection = () => {
