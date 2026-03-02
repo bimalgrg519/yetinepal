@@ -14,14 +14,6 @@ const members: Member[] = [
     role: "Full Stack Developer",
     src: "/team/ashim.png",
   },
-  // {
-  //   name: "Nitan Gurung",
-  //   role: "Associate Frontend Developer",
-  //   src: "/team/nitan.JPG",
-  // },
-  // { name: "Sawan Gurung", role: "DevOps Engineer", src: "/team/sawan.JPG" },
-  // { name: "Akriti Gurung", role: "Intern", src: "/team/akriti.jpg" },
-  // { name: "Saloni Pradhan", role: "Intern", src: "" },
   { name: "Manika Gurung", role: "UI/UX Designer", src: "/team/manika.jpg" },
   {
     name: "Sandesh Chhetri",
@@ -33,21 +25,11 @@ const members: Member[] = [
     role: "Associate Backend Developer",
     src: "/team/manoj.png",
   },
-  // {
-  //   name: "Gaurav Gurung",
-  //   role: "Backend Engineer",
-  //   src: "",
-  // },
   { name: "Bimal Gurung", role: "Founder & CEO", src: "/team/bimal.png" },
   {
     name: "Utsab Gharti",
     role: "Associate Frontend Developer",
     src: "/team/utsab.JPG",
-  },
-  {
-    name: "Simran Tamang",
-    role: "Trainee",
-    src: "/team/simran.JPG",
   },
 ];
 
